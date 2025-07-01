@@ -9,12 +9,16 @@ import {
   Building2,
   TrendingUp,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Wallet,
+  PieChart
 } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: BarChart3 },
-  { name: "Bill Management", href: "/bills", icon: CreditCard },
+  { name: "Payments", href: "/bills", icon: CreditCard },
+  { name: "Credit Cards", href: "/credit-cards", icon: Wallet },
+  { name: "Investment Portfolio", href: "/portfolio", icon: PieChart },
   { name: "Transaction Analytics", href: "/analytics", icon: TrendingUp },
 ];
 
@@ -33,7 +37,7 @@ export default function Sidebar() {
             </div>
             <div>
               <h1 className="text-lg font-semibold text-slate-900">Enterprise Banking</h1>
-              <p className="text-xs text-slate-500">Professional Suite</p>
+             
             </div>
           </div>
         )}
@@ -66,16 +70,6 @@ export default function Sidebar() {
           ))}
         </ul>
       </nav>
-
-      {!collapsed && (
-        <div className="absolute bottom-6 left-3 right-3">
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <div className="text-sm font-medium text-blue-900 mb-1">Need Help?</div>
-            <div className="text-xs text-blue-700 mb-2">Our AI assistant is here to help with your banking needs.</div>
-            <div className="text-xs text-blue-600">→ Click the chat bubble to get started</div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

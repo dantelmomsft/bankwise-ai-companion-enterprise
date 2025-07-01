@@ -15,10 +15,10 @@ import { ChevronDown, Settings, LogOut, User } from "lucide-react";
 export default function Navigation() {
   // Mock user data - in a real app this would come from authentication
   const user = {
-    name: "Sarah Johnson",
-    email: "sarah.johnson@enterprisebank.com",
-    avatar: "/placeholder.svg",
-    initials: "SJ"
+    name: "Michael Carter",
+    email: "michael.carter@enterprisebank.com",
+    avatar: "/avatar.svg", // Update this path if you have a specific male avatar image
+    initials: "MC"
   };
 
   const handleLogout = () => {
